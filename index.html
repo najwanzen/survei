@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>survei kodein club</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <h1>Survey Form Kodein</h1>
-    <div> 
-        <label for="YourFirstName" >Your first name</label>  
-        <input id="YourFirstName" type="text" placeholder="Enter your first name" >
+
+<header class="header">
+  <h1>Kuisoner Minat Kodein Club</h1>
+  <p>Bantu kami memahamai minat anda untuk memberikan pengalaman pembelajaran terbaik.</p>
+</header>
+<main>
+  <form>
+    <!--Input name-->
+    <div class="form-group">
+      <label for="name">Nama</label>
+      <input type="text" name="name" placeholder="Masukkan Nama Anda" required>
     </div>
-    
+    <!--Input Email-->
+    <div class="form-group">
+      <label for="Email">Email</label>
+      <input type="text" id="name" placeholder="Masukkan Email Anda" required>
+    </div>
+    <!--Pilih-->
+    <div class="form-group">
+      
+       <p> Silahkan Pilih Minat Anda</p>
+      <select name="minat" id="minat">
+        <option selected disabled value>Pilih Minat</option>
+        <option value="programming">Programming</option>
+        <option value="multimedia">Multimedia</option>
+        <option value="ioT">IoT</option>
+        <option value="robotic">Robotik</option>
+      </select>
+    </div>
+    <!--Sosial Media-->
+
+    <!--Tambahkan Input-->
+
+    <button>SUBMIT</button>
+
+  </form>
+</main>
+
 </body>
+
 </html>
